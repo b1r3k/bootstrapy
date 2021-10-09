@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "bootstrapy"
+version = "0.1.0"
+description = "Common helpers useful for bootstrapping python applications"
+authors = ["Lukasz Jachym <lukasz.jachym@gmail.com>"]
+license = "MIT License"
+
+[tool.poetry.urls]
+"repository" = "https://github.com/b1r3k/bootstrapy"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^5.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
