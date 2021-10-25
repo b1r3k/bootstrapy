@@ -9,7 +9,8 @@ from .log import setup_logging
 
 def get_config(args_config):
     args = args_config()
-    config_dict = vars(args)
+    # ignore cli arguments without value set
+    config_dict = {k: v for k, v in vars(args).items() if v is not None}
     if getattr(args, 'config_path', None):
         with open(args.config_path, 'rt') as f:
             print(f'Loading config from: {args.config_path}')

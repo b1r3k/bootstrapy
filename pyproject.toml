@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bootstrapy"
-version = "0.1.0"
+version = "0.1.1"
 description = "Common helpers useful for bootstrapping python applications"
 authors = ["Lukasz Jachym <lukasz.jachym@gmail.com>"]
 license = "MIT License"
