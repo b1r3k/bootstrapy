@@ -3,6 +3,11 @@ from logging import basicConfig
 from logging.config import dictConfig
 import logging
 import yaml
+import time
+
+
+class UTCFormatter(logging.Formatter):
+    converter = time.gmtime
 
 
 def setup_logging(
